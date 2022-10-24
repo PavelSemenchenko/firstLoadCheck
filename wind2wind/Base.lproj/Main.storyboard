@@ -16,15 +16,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fuE-UY-sV6">
-                                <rect key="frame" x="60" y="157" width="270" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fuE-UY-sV6">
+                                <rect key="frame" x="60" y="155" width="270" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270" id="g8e-yv-7Pu"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDz-w6-rdd">
                                 <rect key="frame" x="143" y="222" width="105" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Push code">
+                                <buttonConfiguration key="configuration" style="filled" title="Validate">
                                     <color key="baseBackgroundColor" systemColor="systemPurpleColor"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -33,6 +36,16 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="there is no code entered" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iXL-XK-8Ww">
                                 <rect key="frame" x="102.33333333333333" y="440" width="185.33333333333337" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activation code :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2E-we-h9e">
+                                <rect key="frame" x="60" y="128" width="127" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="127" id="Lau-9A-o2A"/>
+                                    <constraint firstAttribute="height" constant="21" id="hbt-Cg-roo"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -46,7 +59,9 @@
                             <constraint firstItem="MDz-w6-rdd" firstAttribute="top" secondItem="fuE-UY-sV6" secondAttribute="bottom" constant="32" id="Ost-XJ-0fO"/>
                             <constraint firstItem="iXL-XK-8Ww" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="UXe-hn-Sqh"/>
                             <constraint firstItem="MDz-w6-rdd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="d5d-XN-p2X"/>
+                            <constraint firstItem="C2E-we-h9e" firstAttribute="leading" secondItem="fuE-UY-sV6" secondAttribute="leading" id="do3-5v-9bJ"/>
                             <constraint firstItem="fuE-UY-sV6" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rJQ-ix-pCa"/>
+                            <constraint firstItem="fuE-UY-sV6" firstAttribute="top" secondItem="C2E-we-h9e" secondAttribute="bottom" constant="6" id="rUL-Xl-Qpk"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="iZ4-4r-OM9"/>
@@ -67,8 +82,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The security kay is :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZy-8B-G14">
-                                <rect key="frame" x="119.66666666666669" y="111" width="151" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The security kay is : absent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZy-8B-G14">
+                                <rect key="frame" x="91.666666666666671" y="111" width="206.66666666666663" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="xAf-nw-4G8"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
