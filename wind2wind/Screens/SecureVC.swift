@@ -14,7 +14,9 @@ class SecureVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         secureText.text = UserDefaults.standard.value(forKey: "codeIn") as! String
+        
     }
     
     
