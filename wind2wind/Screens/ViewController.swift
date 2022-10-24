@@ -15,25 +15,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //let codeIn = textField.text
-        //UserDefaults.standard.set(codeIn, forKey: "codeIn")
-        
-        /*
         if let wellcome = UserDefaults.standard.value(forKey: "codeIn") as? String {
-         check.text = wellcome
-         } else {
-         UserDefaults.standard.set("zeroIn", forKey: "codeIn")
-         }*/
-         
-        UserDefaults.standard.set(check.text, forKey: "codeIn")
+            check.text = wellcome
+        } else {
+            let codeIn = textField.text
+            UserDefaults.standard.set(codeIn, forKey: "codeIn")
+        }
     }
     
     @IBAction func pushClicked(_ sender: Any) {
-        
-        //check.text = UserDefaults.standard.value(forKey: "codeIn") as! String
         let passwordScreen = SecureVC()
         navigationController?.pushViewController(passwordScreen, animated: true)
     }
-    
 }
 
