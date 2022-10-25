@@ -82,11 +82,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The security kay is : absent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZy-8B-G14">
-                                <rect key="frame" x="91.666666666666671" y="111" width="206.66666666666663" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="absent" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZy-8B-G14">
+                                <rect key="frame" x="95" y="211" width="200" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="xAf-nw-4G8"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The security kay is : " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xEc-w7-0eJ">
+                                <rect key="frame" x="117.66666666666669" y="179" width="155" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -95,7 +101,9 @@
                         <viewLayoutGuide key="safeArea" id="VW2-Vb-uDO"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
-                            <constraint firstItem="LZy-8B-G14" firstAttribute="top" secondItem="VW2-Vb-uDO" secondAttribute="top" constant="64" id="JN8-33-F9l"/>
+                            <constraint firstItem="xEc-w7-0eJ" firstAttribute="centerX" secondItem="VW2-Vb-uDO" secondAttribute="centerX" id="3rH-WG-X8o"/>
+                            <constraint firstItem="LZy-8B-G14" firstAttribute="top" secondItem="VW2-Vb-uDO" secondAttribute="top" constant="164" id="JN8-33-F9l"/>
+                            <constraint firstItem="xEc-w7-0eJ" firstAttribute="top" secondItem="VW2-Vb-uDO" secondAttribute="top" constant="132" id="gPK-Fh-Tuf"/>
                             <constraint firstItem="LZy-8B-G14" firstAttribute="centerX" secondItem="VW2-Vb-uDO" secondAttribute="centerX" id="ovz-mi-F7d"/>
                         </constraints>
                     </view>
