@@ -77,7 +77,7 @@
         <!--SecureVC-->
         <scene sceneID="PjR-tB-Ih1">
             <objects>
-                <viewController id="VYp-dq-5tk" customClass="SecureVC" customModule="wind2wind" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="secureVC" id="VYp-dq-5tk" customClass="SecureVC" customModule="wind2wind" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vRf-xI-8o2">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

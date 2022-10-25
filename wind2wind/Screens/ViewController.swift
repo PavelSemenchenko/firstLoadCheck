@@ -27,8 +27,12 @@ class ViewController: UIViewController {
     @IBAction func pushClicked(_ sender: Any) {
         let codeIn = textField.text
         UserDefaults.standard.set(codeIn, forKey: "codeIn")
-        let passwordScreen = SecureVC()
-        navigationController?.pushViewController(passwordScreen, animated: true)
+        UserDefaults.standard.synchronize()
+        // let passwordScreen = SecureVC()
+        // navigationController?.pushViewController(passwordScreen, animated: true)
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let SecureVC = storyBoard.instantiateViewController(withIdentifier: "secureVC") as! SecureVC
+        self.present(SecureVC, animated: true, completion: nil)
     }
 }
 
