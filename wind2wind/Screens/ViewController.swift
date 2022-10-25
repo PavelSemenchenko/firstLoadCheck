@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         /*
         if let wellcome = UserDefaults.standard.value(forKey: "codeIn") as? String {
             check.text = wellcome

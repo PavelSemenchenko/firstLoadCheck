@@ -32,7 +32,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="pushClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mbW-ve-Oym"/>
-                                    <segue destination="VYp-dq-5tk" kind="push" id="q08-4w-mU4"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="there is no code entered" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iXL-XK-8Ww">
@@ -84,7 +83,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The security kay is : absent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZy-8B-G14">
-                                <rect key="frame" x="91.666666666666671" y="155" width="206.66666666666663" height="21"/>
+                                <rect key="frame" x="91.666666666666671" y="111" width="206.66666666666663" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="xAf-nw-4G8"/>
                                 </constraints>
